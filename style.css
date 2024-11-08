@@ -1,0 +1,99 @@
+/* Project: Calculator Styling
+   Author: Anshika
+   Description: Enhanced CSS for a visually appealing calculator with animations, responsiveness, and interactive design. */
+
+   * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ce78cb, #f5e0e3); /* Soft gradient background */
+}
+
+.calculator {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgb(255, 187, 248); /* Light background for calculator */
+    box-shadow: 0px 15px 30px rgba(216, 39, 157, 0.5); /* Subtle shadow for depth */
+}
+
+input {
+    width: 320px;
+    border: 2px solid transparent;/* Transparent border for a clean look */
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 8px 30px rgba(233, 18, 125, 0.7);/* Subtle shadow for input */
+    font-size: 40px;
+    text-align: right;
+    cursor: text;
+    color: purple; /* Text color in purple */
+    max-height: 100px;
+    overflow-y: auto;
+    white-space: nowrap; /* Prevent text from wrapping */
+    outline: none;
+    border-radius: 25px; /* Rounded corners for input */
+    transition: border 0.3s ease;/* Smooth transition for border change */
+}
+
+input:focus {
+    border: 2px solid #e9187d; /* Change border color on focus */
+    box-shadow: 0px 0px 10px 5px rgba(233, 18, 125, 1);/* Highlight with a glowing effect */
+}
+
+input::placeholder {
+    color: rgb(233, 18, 125); /* Placeholder text in pink */
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%; /* Circular buttons */
+    background: linear-gradient(45deg, #e9187d, #ff8ca1); /* Gradient background for number buttons */
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 4px 12px rgba(174, 17, 179, 0.4); /* Subtle shadow for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0px 6px 20px rgba(174, 17, 179, 0.8); /* Enhanced shadow on hover */
+}
+
+.operator {
+    background: linear-gradient(45deg, #e6b3f1, #ca81f5); /* Gradient for operator buttons */
+}
+
+.equal {
+    /* background: linear-gradient(45deg, #6ae233, #5ee354); */
+    background: linear-gradient(45deg, #dfdc49, #d6117e);/* Green gradient for equal button */
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 10px;
+        width: 80%; /* Adjust calculator width for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Input field adjusts to full width */
+    }
+
+    button {
+        width: 50px; /* Adjust button size for mobile */
+        height: 50px;
+        font-size: 18px; /* Slightly smaller font size */
+    }
+}
