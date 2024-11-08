@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+    Project: Calculator Application 
+    Author: Anshika
+    Description: This is a simple calculator built using HTML, CSS, and JavaScript.
+    Features: Basic arithmetic operations such as addition, subtraction, multiplication, and division.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - By Anshika</title>
+    <!-- Link to external CSS for styling the calculator -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Calculator container -->
+    <div class="calculator">
+        <!-- Display/input box for calculator -->
+        <input type="text" placeholder="0" id="inputbox" maxlength="12">
+    
+        <!-- Button row for clearing and operators -->
+        <div>
+            <button class="operator" style="font-size:25px;">AC</button>
+            <button class="operator" style="font-size:25px;">DEL</button>
+            <button class="operator" style="font-size: 30px;">%</button>
+            <button class="operator" style="font-size:25px;">/</button>
+        </div>
+        <!-- Button row for number buttons and multiplication operator -->
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator" style="font-size: 30px;">*</button>
+        </div>
+        <!-- Button row for number buttons and subtraction operator -->
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator" style="font-size: 30px;">-</button>
+        </div>
+        <!-- Button row for number buttons and addition operator -->
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator" style="font-size: 35px;">+</button>
+        </div>
+        <!-- Button row for number buttons and equal operator -->
+        <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="equal" style="font-size: 30px;">=</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>
